@@ -1,0 +1,10 @@
+com\project\movietickets\ApplicationTests.class
+com\project\movietickets\repository\RoomChairRepositoryTest.class
+com\project\movietickets\repository\CinemaRepositoryTest.class
+com\project\movietickets\repository\CityRepositoryTest.class
+com\project\movietickets\repository\ChairRepositoryTest.class
+com\project\movietickets\repository\MovieRepositoryTest.class
+com\project\movietickets\service\UserServiceTest.class
+com\project\movietickets\repository\UserRepositoryTest.class
+com\project\movietickets\repository\RoomRepositoryTest.class
+com\project\movietickets\service\RegisterServiceTest.class
