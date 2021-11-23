@@ -34,13 +34,22 @@
                 </li>
 
                 <%
-                    if (request.isUserInRole("ROLE_ADMIN")) {
+                    if (request.isUserInRole("ROLE_USER")) {
+                        out.print("<li>\n" +
+                                "                    <span class=\"sub-nav-toggle plus\"></span>\n" +
+                                "                    <a href=\"/history\">Lịch sử</a>\n" +
+                                "                </li>");
+                    } else if (request.isUserInRole("ROLE_EMPLOYEE")) {
+                        out.print("<li>\n" +
+                                "                    <span class=\"sub-nav-toggle plus\"></span>\n" +
+                                "                    <a href=\"/manage\">In vé</a>\n" +
+                                "                </li>");
+                    } else if (request.isUserInRole("ROLE_ADMIN")) {
                         out.print("<li>\n" +
                                 "                    <span class=\"sub-nav-toggle plus\"></span>\n" +
                                 "                    <a href=\"/admin\">Quản lý</a>\n" +
                                 "                </li>");
-                    
-                    } 
+                    }
 
                     if (request.getRemoteUser() != null) {
                         out.print("<li>\n" +
