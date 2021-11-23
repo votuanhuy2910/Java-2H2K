@@ -38,4 +38,3 @@ public class MyUserDetailsService implements UserDetailsService {
                 true, true, true, true, authorities);
     }
 }
-
