@@ -37,11 +37,12 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
+
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="/admin">Home</a></li>
-                            <li class="breadcrumb-item active">Thêm mới lịch chiếu</li>
+                            <li class="breadcrumb-item active">Cập nhật lịch chiếu</li>
                         </ol>
                     </div>
                 </div>
@@ -53,26 +54,32 @@
             <div class="container-fluid">
                 <!-- Content -->
 
-                <jsp:include page="info-cinemas.jsp"/>
+                <jsp:include page="update-cinemas.jsp"/>
 
-                <form action="/admin/schedules/create" method="post">
+                <form action="/admin/schedules/${roomMovieSchedule.id}/update" method="post">
                     <div class="form-group">
                         <label for="select-movie">Chọn phim:</label>
                         <select class="form-control col-sm-6" name="movieId" id="select-movie">
                             <c:forEach var="movie" items="${movies}">
-                                <option value="${movie.id}">${movie.name}</option>
+                                <option <c:if test="${movie.id==roomMovieSchedule.movie.id}">selected</c:if>
+                                        value="${movie.id}">${movie.name}</option>
                             </c:forEach>
                         </select>
                     </div>
 
                     <div class="form-group">
                         <label for="select-time">Chọn giờ:</label>
-                        <input name="time" class="form-control col-sm-6" id="select-time" type="datetime-local" required>
+                        <input name="time"
+                               class="form-control col-sm-6"
+                               id="select-time"
+                               value="${roomMovieSchedule.schedule.time}"
+                               type="datetime-local" required>
                     </div>
 
                     <input hidden name="roomId" id="room-id">
 
-                    <button class="btn btn-primary" type="submit">Thêm lịch</button>
+                    <button class="btn btn-primary" type="submit">Cập nhật</button>
+                    <a role="button" class="btn btn-secondary" href="/admin/schedules">Hủy</a>
                 </form>
 
                 <!-- End Content -->
