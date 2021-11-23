@@ -1,7 +1,5 @@
 package com.project.movietickets.service;
 
-public package com.project.movietickets.service;
-
 import com.project.movietickets.entity.TokenEntity;
 import com.project.movietickets.entity.UserEntity;
 import com.project.movietickets.model.Message;
@@ -90,7 +88,4 @@ public class RestorePasswordService {
 
         return new Message(Message.SUCCESS, "Bạn đã đổi mật khẩu thành công!");
     }
-}
-class RestorePasswordService {
-    
 }
