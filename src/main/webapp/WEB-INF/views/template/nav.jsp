@@ -30,7 +30,7 @@
                 </li>
                 <li>
                     <span class="sub-nav-toggle plus"></span>
-                    <a href="/">Trang giá</a>
+                    <a href="/amount">Trang giá</a>
                 </li>
 
                 <%
