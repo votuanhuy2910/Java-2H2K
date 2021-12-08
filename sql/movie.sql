@@ -1,5 +1,3 @@
--- MySQL dump 10.13  Distrib 8.0.21, for Linux (x86_64)
---
 -- Host: 127.0.0.1    Database: db_movie
 -- ------------------------------------------------------
 -- Server version	8.0.21
@@ -322,4 +320,3 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-10-20 15:51:29
