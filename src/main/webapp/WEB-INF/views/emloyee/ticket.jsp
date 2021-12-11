@@ -11,7 +11,7 @@
 
         </div>
         <div class="col-sm-3">
-            <h1 style="color: red;">HAC</h1>
+            <h1 style="color: red;">2H2K</h1>
         </div>
     </div>
 
