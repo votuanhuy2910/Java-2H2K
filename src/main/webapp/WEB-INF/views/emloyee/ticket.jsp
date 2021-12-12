@@ -32,7 +32,7 @@
     <div class="row">
         <div class="col-sm-7">
             <h3>${ticket.date}</h3>
-            <h1>Da Nang</h1>
+            <h1>280 An Dương Vương</h1>
             <h4>Adult-v</h4>
             <h4>110.000</h4>
             <h5>Da bao gom 5% thue VAT</h5>
